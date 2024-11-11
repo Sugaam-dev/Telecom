@@ -1,9 +1,14 @@
-import React, { useState } from 'react';
+// src/Components/Sidebar.jsx
+import React, { useState, useContext } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { PhoneNumberContext } from './PhoneNumberContext'; // Import the context
 
 function Sidebar({ selectedPage, setSelectedPage }) {
   const [activePage, setActivePage] = useState(selectedPage || 'popular');
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  // Consume the context
+  const { phoneNumber } = useContext(PhoneNumberContext);
 
   const handlePageSelect = (page) => {
     setActivePage(page);
@@ -39,6 +44,14 @@ function Sidebar({ selectedPage, setSelectedPage }) {
           >
             <FaTimes size={24} />
           </button>
+        )}
+
+        {/* Display the phone number above Plan Category */}
+        {phoneNumber && (
+          <div className="mb-4 p-2 bg-blue-100 rounded-md">
+            <p className="text-blue-700 font-semibold">Phone Number:</p>
+            <p className="text-blue-700">{phoneNumber}</p>
+          </div>
         )}
 
         <h2 className="text-lg font-semibold mb-4">Plan Category</h2>

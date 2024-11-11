@@ -1,14 +1,17 @@
-// Prepaid.jsx
-import React, { useState } from "react";
+// src/Components/Prepaid.jsx
+import React, { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import { PhoneNumberContext } from './PhoneNumberContext'; // Import the context
 
 function Prepaid() {
   const [isMobileSelected, setIsMobileSelected] = useState(true);
   const [isPrepaid, setIsPrepaid] = useState(true); // Default to Prepaid
-  const [phoneNumber, setPhoneNumber] = useState("");
   const [error, setError] = useState("");
 
   const navigate = useNavigate();
+
+  // Consume the context
+  const { phoneNumber, setPhoneNumber } = useContext(PhoneNumberContext);
 
   const handlePrepaid = () => {
     navigate("/");
@@ -92,7 +95,7 @@ function Prepaid() {
             type="text"
             placeholder="+91 Jio Number"
             value={phoneNumber}
-            onChange={(e) => setPhoneNumber(e.target.value)}
+            onChange={(e) => setPhoneNumber(e.target.value)} // Update context state
             className="bg-transparent text-gray-200 flex-grow outline-none placeholder-gray-300"
           />
           <button
