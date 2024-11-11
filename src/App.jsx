@@ -6,11 +6,12 @@ import {
   Route,
 } from "react-router-dom";
 import Prepaid from './Components/Prepaid';
-import Postpaid from './Components/PostPaid';
+
 import PlansPage from './Components/Planspage';
 import PlanControl from './Components/PlanControl';
-import Sidebar from './Components/Sidebar'; // Import Sidebar
+
 import { PhoneNumberProvider } from './Components/PhoneNumberContext'; // Import the Provider
+import Postpaid from './Components/PostPaid';
 
 function App() {
   return (
@@ -24,7 +25,7 @@ function App() {
           <div className="flex-1">
             <Routes>
               <Route path='/' element={<Prepaid />} />
-              <Route path='/postpaid' element={<Postpaid />} />
+              <Route path='/postpaid' element={<Postpaid/>} />
               <Route path='/plans' element={<PlanControl />} />
               {/* Add other routes as needed */}
             </Routes>
