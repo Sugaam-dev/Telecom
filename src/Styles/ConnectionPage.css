@@ -1,0 +1,76 @@
+/* src/components/styles/ConnectionPage.css */
+.connection-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .tab-navigation {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .tab-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+    color: #000;
+    transition: 0.3s;
+  }
+  
+  .tab-button.active {
+    border-bottom: 3px solid blue;
+    font-weight: bold;
+  }
+  
+  .content-box {
+    background-color: #0041C2;
+    border-radius: 10px;
+    padding: 20px;
+    color: #fff;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .footer-link {
+    padding: 10px 15px;
+    background-color: #fff;
+    border-radius: 20px;
+    color: #0041C2;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+  }
+  
+  .footer-link:hover {
+    background-color: #003399;
+    color: #fff;
+  }
+  

@@ -1,0 +1,42 @@
+/* src/components/styles/Postpaid.css */
+.postpaid-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .input-field {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .action-button {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #0041C2;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .action-button:hover {
+    background-color: #003399;
+    color: #fff;
+  }
+  
+  .note {
+    font-size: 0.8rem;
+    color: #fff;
+    margin-top: 10px;
+    text-align: left;
+    max-width: 400px;
+  }
+  
