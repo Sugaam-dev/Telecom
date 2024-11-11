@@ -19,7 +19,7 @@ function Prepaid() {
   };
 
   const handlePostpaid = () => {
-    navigate("/postpaid");
+    // navigate("/postpaid");
     setIsPrepaid(false);
   };
 
