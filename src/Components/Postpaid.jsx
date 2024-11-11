@@ -16,7 +16,7 @@ function Postpaid() {
   const handlePostpaid = () => {
     // Since this is the Postpaid component, setIsPrepaid should already be false
     // This ensures idempotency
-    navigate("/postpaid");
+    // navigate("/postpaid");
     setIsPrepaid(false);
   };
 
