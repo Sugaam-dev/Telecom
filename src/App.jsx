@@ -11,7 +11,7 @@ import PlansPage from './Components/Planspage';
 import PlanControl from './Components/PlanControl';
 
 import { PhoneNumberProvider } from './Components/PhoneNumberContext'; // Import the Provider
-import Postpaid from './Components/PostPaid';
+// import Postpaid from './Components/PostPaid';
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
           <div className="flex-1">
             <Routes>
               <Route path='/' element={<Prepaid />} />
-              <Route path='/postpaid' element={<Postpaid/>} />
+              {/* <Route path='/postpaid' element={<Postpaid/>} /> */}
               <Route path='/plans' element={<PlanControl />} />
               {/* Add other routes as needed */}
             </Routes>
